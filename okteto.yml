@@ -13,3 +13,5 @@ environment:
 persistentVolume:
   enabled: true
   size: 5Gi
+sync:
+  - .:/home/coder/project
