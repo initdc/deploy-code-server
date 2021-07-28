@@ -1,0 +1,15 @@
+name: coder
+forward:
+  - 8080:80
+resources:
+  requests:
+    cpu: "250m"
+    memory: "512Mi"
+  limits:
+    cpu: "1"
+    memory: "3Gi"
+environment:
+  PASSWORD: YourPassword
+persistentVolume:
+  enabled: true
+  size: 5Gi
